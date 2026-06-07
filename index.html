@@ -9,31 +9,30 @@
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;min-height:100vh}
 input,select,textarea,button{font-family:inherit}
 .topbar{background:#fff;border-bottom:1px solid #e5e5e3;padding:0 2rem;height:56px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
-.topbar-logo{font-size:15px;font-weight:600;letter-spacing:0.02em;color:#1a1a1a}
+.topbar-logo{font-size:15px;font-weight:600;color:#1a1a1a}
 .topbar-logo span{color:#16a34a}
-.container{max-width:780px;margin:0 auto;padding:2rem 1rem}
+.container{max-width:820px;margin:0 auto;padding:2rem 1rem}
 input[type=text],input[type=email],input[type=tel],input[type=password],textarea,select{background:#fff;color:#1a1a1a;border:1px solid #d4d4d0;border-radius:8px;transition:border 0.15s}
-input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus,input[type=password]:focus,textarea:focus,select:focus{outline:none;border-color:#16a34a}
-.btn{height:36px;padding:0 16px;border:1px solid #d4d4d0;border-radius:8px;background:#fff;color:#1a1a1a;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:background 0.15s}
+input:focus,textarea:focus,select:focus{outline:none;border-color:#16a34a}
+.btn{height:34px;padding:0 14px;border:1px solid #d4d4d0;border-radius:8px;background:#fff;color:#1a1a1a;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:5px;transition:background 0.15s}
 .btn:hover{background:#f5f5f3}
 .btn-primary{background:#1a1a1a;color:#fff;border-color:#1a1a1a}
 .btn-primary:hover{background:#333}
-.btn-ghost{border:none;background:none;color:#737370;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:4px;padding:2px 6px;border-radius:6px}
+.btn-ghost{border:none;background:none;color:#737370;font-size:12px;cursor:pointer;display:inline-flex;align-items:center;gap:3px;padding:2px 6px;border-radius:6px}
 .btn-ghost:hover{color:#1a1a1a;background:#ebebea}
-.btn-danger{border:none;background:none;color:#dc2626;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:4px;padding:2px 6px;border-radius:6px}
+.btn-danger{border:none;background:none;color:#dc2626;font-size:12px;cursor:pointer;padding:2px 5px;border-radius:4px}
 .btn-danger:hover{background:#fee2e2}
 .card{background:#fff;border:1px solid #e5e5e3;border-radius:12px;padding:1.25rem}
 .avatar{width:42px;height:42px;border-radius:50%;background:#dcfce7;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:#16a34a;flex-shrink:0}
-.id-chip{display:inline-flex;align-items:center;gap:5px;background:#f5f5f3;border:1px solid #e5e5e3;border-radius:8px;padding:3px 10px;font-size:12px;color:#737370}
 .tabs{display:flex;border-bottom:1px solid #e5e5e3;margin-bottom:1.25rem}
-.tab{padding:9px 18px;font-size:13px;cursor:pointer;color:#737370;border-bottom:2px solid transparent;background:none;border-left:none;border-right:none;border-top:none;margin-bottom:-1px}
+.tab{padding:9px 16px;font-size:13px;cursor:pointer;color:#737370;border-bottom:2px solid transparent;background:none;border-left:none;border-right:none;border-top:none;margin-bottom:-1px}
 .tab.active{color:#1a1a1a;border-bottom:2px solid #1a1a1a;font-weight:500}
 .tab:hover:not(.active){color:#1a1a1a}
 .section-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;color:#a3a39e;margin-bottom:8px}
 .booking-row{display:flex;align-items:center;gap:10px;padding:10px 14px;border:1px solid #e5e5e3;border-radius:8px;margin-bottom:6px;background:#fff}
 .booking-code{font-size:13px;font-weight:600;color:#1a1a1a;font-family:monospace}
 .booking-vehicle{font-size:12px;color:#737370;margin-top:1px}
-.booking-date{font-size:12px;color:#a3a39e;margin-left:auto;white-space:nowrap}
+.booking-date{font-size:12px;color:#a3a39e;margin-left:auto;white-space:nowrap;margin-right:8px}
 .note-card{background:#f9f9f8;border:1px solid #e5e5e3;border-radius:8px;padding:12px;margin-bottom:8px}
 .note-header{display:flex;align-items:center;gap:7px;margin-bottom:7px;flex-wrap:wrap}
 .ch-badge{font-size:11px;padding:2px 9px;border-radius:6px;font-weight:500}
@@ -54,21 +53,27 @@ input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus,input[type=
 .result-name{font-size:14px;font-weight:500;color:#1a1a1a}
 .result-meta{font-size:12px;color:#737370;margin-top:1px}
 .result-count{margin-left:auto;font-size:12px;color:#a3a39e;white-space:nowrap}
-.new-btn{width:100%;display:flex;align-items:center;gap:7px;padding:10px 14px;border:1px dashed #d4d4d0;border-radius:8px;cursor:pointer;font-size:13px;color:#737370;background:none;transition:background 0.1s}
+.new-btn{width:100%;display:flex;align-items:center;gap:7px;padding:10px 14px;border:1px dashed #d4d4d0;border-radius:8px;cursor:pointer;font-size:13px;color:#737370;background:none}
 .new-btn:hover{background:#f5f5f3}
-.modal-wrap{position:fixed;inset:0;background:rgba(0,0,0,0.4);display:flex;align-items:flex-start;justify-content:center;z-index:200;padding-top:80px}
-.modal{background:#fff;border:1px solid #e5e5e3;border-radius:12px;padding:1.5rem;width:460px;max-width:95vw;max-height:80vh;overflow-y:auto}
+.modal-wrap{position:fixed;inset:0;background:rgba(0,0,0,0.4);display:flex;align-items:flex-start;justify-content:center;z-index:200;padding-top:60px;overflow-y:auto}
+.modal{background:#fff;border:1px solid #e5e5e3;border-radius:12px;padding:1.5rem;width:480px;max-width:95vw;margin-bottom:40px}
 .modal h3{font-size:15px;font-weight:600;margin-bottom:1.25rem;color:#1a1a1a}
 .field{margin-bottom:12px}
 .field label{display:block;font-size:12px;font-weight:500;color:#737370;margin-bottom:4px}
 .field input,.field select,.field textarea{width:100%;padding:8px 11px;font-size:13px}
 .field textarea{min-height:90px;resize:vertical;line-height:1.55}
 .field select{height:36px}
+.field-row{display:flex;gap:8px}
+.field-row .field{flex:1}
 .modal-footer{display:flex;justify-content:flex-end;gap:8px;margin-top:1.25rem;padding-top:1rem;border-top:1px solid #e5e5e3}
 .back-btn{display:flex;align-items:center;gap:5px;background:none;border:none;cursor:pointer;color:#737370;font-size:13px;margin-bottom:1.25rem;padding:0}
 .back-btn:hover{color:#1a1a1a}
 .divider{height:1px;background:#e5e5e3;margin:1.5rem 0}
-.global-search-note{padding:11px 14px;border:1px solid #e5e5e3;border-radius:8px;margin-bottom:6px;background:#fff;cursor:pointer;transition:background 0.1s}
+.contact-item{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid #f0f0ee}
+.contact-item:last-child{border-bottom:none}
+.contact-value{font-size:13px;color:#1a1a1a;flex:1}
+.contact-source{font-size:11px;color:#a3a39e;background:#f5f5f3;border-radius:4px;padding:1px 6px;white-space:nowrap}
+.global-search-note{padding:11px 14px;border:1px solid #e5e5e3;border-radius:8px;margin-bottom:6px;background:#fff;cursor:pointer}
 .global-search-note:hover{background:#f5f5f3}
 .gs-guest{font-size:12px;color:#737370;margin-bottom:4px;font-weight:500}
 .gs-body{font-size:13px;color:#1a1a1a;line-height:1.55}
@@ -87,6 +92,10 @@ input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus,input[type=
 .lock-box button{width:100%;height:42px;background:#1a1a1a;color:#fff;border:none;border-radius:8px;font-size:14px;cursor:pointer;font-weight:500}
 .lock-box button:hover{background:#333}
 .lock-error{font-size:13px;color:#dc2626;margin-top:8px;min-height:18px}
+.contacts-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+@media(max-width:560px){.contacts-grid{grid-template-columns:1fr}}
+.contacts-section{background:#f9f9f8;border:1px solid #e5e5e3;border-radius:8px;padding:12px}
+.contacts-section-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:#a3a39e;margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
 </style>
 </head>
 <body>
@@ -107,7 +116,7 @@ input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus,input[type=
     <div id="topbar-right" style="font-size:12px;color:#a3a39e"></div>
   </div>
   <div class="container">
-    <div id="app"><div class="loading-screen"><div class="spinner"></div><div style="margin-top:12px">Loading...</div></div></div>
+    <div id="app"><div class="loading-screen"><div class="spinner"></div></div></div>
   </div>
 </div>
 
@@ -115,374 +124,329 @@ input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus,input[type=
 <div class="toast" id="toast"></div>
 
 <script>
-const PASSCODE = 'maniacalobsession';
-const SUPABASE_URL = 'https://pijwahockkwvclqifinq.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_WFvvh9mIIjil2QmfQW-6KA_3nK_abxU';
+const PASSCODE='maniacalobsession';
+const SUPABASE_URL='https://pijwahockkwvclqifinq.supabase.co';
+const SUPABASE_KEY='sb_publishable_WFvvh9mIIjil2QmfQW-6KA_3nK_abxU';
 
-function checkPass() {
-  const val = document.getElementById('passcode-input').value;
-  if (val === PASSCODE) {
-    sessionStorage.setItem('zevo_auth', '1');
-    document.getElementById('lock-screen').style.display = 'none';
-    document.getElementById('main-app').style.display = '';
+function checkPass(){
+  const val=document.getElementById('passcode-input').value;
+  if(val===PASSCODE){
+    sessionStorage.setItem('zevo_auth','1');
+    document.getElementById('lock-screen').style.display='none';
+    document.getElementById('main-app').style.display='';
     loadHome();
   } else {
-    document.getElementById('lock-error').textContent = 'Incorrect passcode. Try again.';
-    document.getElementById('passcode-input').value = '';
+    document.getElementById('lock-error').textContent='Incorrect passcode. Try again.';
+    document.getElementById('passcode-input').value='';
     document.getElementById('passcode-input').focus();
   }
 }
-
-if (sessionStorage.getItem('zevo_auth') === '1') {
-  document.getElementById('lock-screen').style.display = 'none';
-  document.getElementById('main-app').style.display = '';
+if(sessionStorage.getItem('zevo_auth')==='1'){
+  document.getElementById('lock-screen').style.display='none';
+  document.getElementById('main-app').style.display='';
 }
 
-const api = async (path, method='GET', body=null) => {
-  const opts = {
-    method,
-    headers: {
-      'apikey': SUPABASE_KEY,
-      'Authorization': 'Bearer ' + SUPABASE_KEY,
-      'Content-Type': 'application/json',
-      'Prefer': method==='POST' ? 'return=representation' : ''
-    }
-  };
-  if (body) opts.body = JSON.stringify(body);
-  const r = await fetch(SUPABASE_URL + '/rest/v1/' + path, opts);
-  if (!r.ok) { const e = await r.text(); throw new Error(e); }
-  const text = await r.text();
-  return text ? JSON.parse(text) : [];
+const api=async(path,method='GET',body=null)=>{
+  const opts={method,headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+SUPABASE_KEY,'Content-Type':'application/json','Prefer':method==='POST'?'return=representation':''}};
+  if(body)opts.body=JSON.stringify(body);
+  const r=await fetch(SUPABASE_URL+'/rest/v1/'+path,opts);
+  if(!r.ok)throw new Error(await r.text());
+  const t=await r.text();
+  return t?JSON.parse(t):[];
 };
 
-let currentGuestId = null;
-let currentTab = 'bookings';
-let guestCache = {};
+let currentGuestId=null,currentTab='bookings',guestCache={};
 
-function esc(s) {
-  if (!s) return '';
-  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-function initials(name) {
-  return (name||'?').split(' ').filter(Boolean).map(w=>w[0].toUpperCase()).slice(0,2).join('');
-}
-function fmtTime(ts) {
-  const d = new Date(ts);
-  return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) + ', ' + d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
-}
-function chClass(ch) {
-  return {email:'ch-email',sms:'ch-sms',chat:'ch-chat',app:'ch-app',internal:'ch-internal'}[ch]||'ch-internal';
-}
-function chLabel(ch) {
-  return {email:'Email',sms:'SMS',chat:'Web chat',app:'App chat',internal:'Internal'}[ch]||ch;
-}
-function toast(msg) {
-  const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'), 2500);
-}
-function setApp(html) { document.getElementById('app').innerHTML = html; }
+function esc(s){if(!s)return'';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function initials(name){return(name||'?').split(' ').filter(Boolean).map(w=>w[0].toUpperCase()).slice(0,2).join('');}
+function fmtTime(ts){const d=new Date(ts);return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})+', '+d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});}
+function chClass(ch){return{email:'ch-email',sms:'ch-sms',chat:'ch-chat',app:'ch-app',internal:'ch-internal'}[ch]||'ch-internal';}
+function chLabel(ch){return{email:'Email',sms:'SMS',chat:'Web chat',app:'App chat',internal:'Internal'}[ch]||ch;}
+function sourceLabel(s){return{email:'Email','sms':'SMS',chat:'Web chat',app:'ZEVO app','zevo-account':'ZEVO account',other:'Other'}[s]||s;}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500);}
+function setApp(html){document.getElementById('app').innerHTML=html;}
 
-async function loadHome() {
-  currentGuestId = null;
+async function loadHome(){
+  currentGuestId=null;
   setApp('<div class="loading-screen"><div class="spinner"></div></div>');
-  const guests = await api('guests?select=*,bookings(id),notes(id)&order=created_at.desc');
-  document.getElementById('topbar-right').textContent = guests.length + ' guest' + (guests.length!==1?'s':'');
+  const guests=await api('guests?select=*,bookings(id),notes(id)&order=created_at.desc');
+  document.getElementById('topbar-right').textContent=guests.length+' guest'+(guests.length!==1?'s':'');
   setApp(renderHome(guests));
 }
 
-function renderHome(guests) {
-  let html = `
-    <div class="search-row">
-      <input type="text" id="sq" placeholder="Search guests by name, email, or phone..." onkeydown="if(event.key==='Enter')doSearch()" />
-      <button class="btn" onclick="doSearch()">Search</button>
-    </div>
-    <div id="guest-list">`;
-  if (!guests.length) {
-    html += `<div class="empty">No guests yet. Add your first one below.</div>`;
-  } else {
-    guests.forEach(g => {
-      html += `<div class="result-row" onclick="openGuest('${g.id}')">
-        <div class="avatar">${esc(initials(g.name))}</div>
-        <div>
-          <div class="result-name">${esc(g.name)}</div>
-          <div class="result-meta">${[g.email,g.phone].filter(Boolean).join(' · ')||'No contact info'}</div>
-        </div>
-        <span class="result-count">${(g.bookings||[]).length} booking${(g.bookings||[]).length!==1?'s':''} &middot; ${(g.notes||[]).length} note${(g.notes||[]).length!==1?'s':''}</span>
-      </div>`;
-    });
-  }
-  html += `</div>
-    <button class="new-btn" style="margin-top:6px" onclick="openModal('guest')">+ New guest profile</button>
-    <div class="divider"></div>
-    <div class="section-label">Search all notes</div>
-    <div class="search-row">
-      <input type="text" id="nsq" placeholder="Search note content across all guests..." onkeydown="if(event.key==='Enter')doNoteSearch()" />
-      <button class="btn" onclick="doNoteSearch()">Search</button>
-    </div>
-    <div id="note-search-results"></div>`;
+function renderHome(guests){
+  let html=`<div class="search-row"><input type="text" id="sq" placeholder="Search by name, email, phone, or booking code..." onkeydown="if(event.key==='Enter')doSearch()" /><button class="btn" onclick="doSearch()">Search</button></div><div id="guest-list">`;
+  if(!guests.length){html+=`<div class="empty">No guests yet. Add your first one below.</div>`;}
+  else{guests.forEach(g=>{html+=`<div class="result-row" onclick="openGuest('${g.id}')">
+    <div class="avatar">${esc(initials(g.name))}</div>
+    <div><div class="result-name">${esc(g.name)}</div><div class="result-meta">${esc(g.primary_email||g.primary_phone||'No contact info')}</div></div>
+    <span class="result-count">${(g.bookings||[]).length} booking${(g.bookings||[]).length!==1?'s':''} &middot; ${(g.notes||[]).length} note${(g.notes||[]).length!==1?'s':''}</span>
+  </div>`;});}
+  html+=`</div><button class="new-btn" style="margin-top:6px" onclick="openModal('guest')">+ New guest profile</button>
+  <div class="divider"></div>
+  <div class="section-label">Search all notes</div>
+  <div class="search-row"><input type="text" id="nsq" placeholder="Search note content across all guests..." onkeydown="if(event.key==='Enter')doNoteSearch()" /><button class="btn" onclick="doNoteSearch()">Search</button></div>
+  <div id="note-search-results"></div>`;
   return html;
 }
 
-async function doSearch() {
-  const q = (document.getElementById('sq').value||'').trim();
-  if (!q) { loadHome(); return; }
-  const guests = await api(`guests?select=*,bookings(id),notes(id)&or=(name.ilike.*${encodeURIComponent(q)}*,email.ilike.*${encodeURIComponent(q)}*,phone.ilike.*${encodeURIComponent(q)}*)`);
-  let html = '';
-  if (!guests.length) {
-    html = `<div class="empty">No guests found for "${esc(q)}"</div>`;
-  } else {
-    guests.forEach(g => {
-      html += `<div class="result-row" onclick="openGuest('${g.id}')">
-        <div class="avatar">${esc(initials(g.name))}</div>
-        <div>
-          <div class="result-name">${esc(g.name)}</div>
-          <div class="result-meta">${[g.email,g.phone].filter(Boolean).join(' · ')||'No contact info'}</div>
-        </div>
-        <span class="result-count">${(g.bookings||[]).length} booking${(g.bookings||[]).length!==1?'s':''} &middot; ${(g.notes||[]).length} note${(g.notes||[]).length!==1?'s':''}</span>
-      </div>`;
-    });
-  }
-  document.getElementById('guest-list').innerHTML = html;
+async function doSearch(){
+  const q=(document.getElementById('sq').value||'').trim();
+  if(!q){loadHome();return;}
+  const [gByName,contacts,bookings]=await Promise.all([
+    api(`guests?select=*,bookings(id),notes(id)&name=ilike.*${encodeURIComponent(q)}*`),
+    api(`guest_contacts?select=*&value=ilike.*${encodeURIComponent(q)}*`),
+    api(`bookings?select=*&code=ilike.*${encodeURIComponent(q)}*`)
+  ]);
+  const guestIds=new Set(gByName.map(g=>g.id));
+  contacts.forEach(c=>guestIds.add(c.guest_id));
+  bookings.forEach(b=>guestIds.add(b.guest_id));
+  if(!guestIds.size){document.getElementById('guest-list').innerHTML=`<div class="empty">No guests found for "${esc(q)}"</div>`;return;}
+  const full=await api(`guests?select=*,bookings(id),notes(id)&id=in.(${[...guestIds].join(',')})`);
+  let html='';
+  full.forEach(g=>{html+=`<div class="result-row" onclick="openGuest('${g.id}')">
+    <div class="avatar">${esc(initials(g.name))}</div>
+    <div><div class="result-name">${esc(g.name)}</div><div class="result-meta">${esc(g.primary_email||g.primary_phone||'No contact info')}</div></div>
+    <span class="result-count">${(g.bookings||[]).length} booking${(g.bookings||[]).length!==1?'s':''} &middot; ${(g.notes||[]).length} note${(g.notes||[]).length!==1?'s':''}</span>
+  </div>`;});
+  document.getElementById('guest-list').innerHTML=html||`<div class="empty">No guests found for "${esc(q)}"</div>`;
 }
 
-async function doNoteSearch() {
-  const q = (document.getElementById('nsq').value||'').trim();
-  const res = document.getElementById('note-search-results');
-  if (!q) { res.innerHTML=''; return; }
-  const notes = await api(`notes?select=*,guests(id,name),bookings(code)&text=ilike.*${encodeURIComponent(q)}*&order=created_at.desc`);
-  if (!notes.length) { res.innerHTML=`<div class="empty">No notes match "${esc(q)}"</div>`; return; }
-  res.innerHTML = notes.map(n=>`
-    <div class="global-search-note" onclick="openGuest('${n.guest_id}')">
-      <div class="gs-guest">${esc(n.guests?.name||'Unknown guest')}</div>
-      <div class="gs-body">${esc(n.text)}</div>
-      <div class="gs-meta">
-        <span class="ch-badge ${chClass(n.channel)}">${chLabel(n.channel)}</span>
-        ${n.bookings?`<span class="note-booking-ref">${esc(n.bookings.code)}</span>`:''}
-        <span style="font-size:11px;color:#a3a39e">${fmtTime(n.created_at)}</span>
-        ${n.agent?`<span style="font-size:11px;color:#737370">${esc(n.agent)}</span>`:''}
-      </div>
-    </div>`).join('');
+async function doNoteSearch(){
+  const q=(document.getElementById('nsq').value||'').trim();
+  const res=document.getElementById('note-search-results');
+  if(!q){res.innerHTML='';return;}
+  const notes=await api(`notes?select=*,guests(id,name),bookings(code)&text=ilike.*${encodeURIComponent(q)}*&order=created_at.desc`);
+  if(!notes.length){res.innerHTML=`<div class="empty">No notes match "${esc(q)}"</div>`;return;}
+  res.innerHTML=notes.map(n=>`<div class="global-search-note" onclick="openGuest('${n.guest_id}')">
+    <div class="gs-guest">${esc(n.guests?.name||'Unknown')}</div>
+    <div class="gs-body">${esc(n.text)}</div>
+    <div class="gs-meta">
+      <span class="ch-badge ${chClass(n.channel)}">${chLabel(n.channel)}</span>
+      ${n.bookings?`<span class="note-booking-ref">${esc(n.bookings.code)}</span>`:''}
+      <span style="font-size:11px;color:#a3a39e">${fmtTime(n.created_at)}</span>
+      ${n.agent?`<span style="font-size:11px;color:#737370">${esc(n.agent)}</span>`:''}
+    </div>
+  </div>`).join('');
 }
 
-async function openGuest(id) {
-  currentGuestId = id;
-  currentTab = 'bookings';
-  await renderProfile();
-}
+async function openGuest(id){currentGuestId=id;currentTab='bookings';await renderProfile();}
 
-async function renderProfile() {
+async function renderProfile(){
   setApp('<div class="loading-screen"><div class="spinner"></div></div>');
-  const [guest, bookings, notes] = await Promise.all([
+  const [guest,bookings,notes,contacts]=await Promise.all([
     api(`guests?id=eq.${currentGuestId}&select=*`).then(r=>r[0]),
     api(`bookings?guest_id=eq.${currentGuestId}&select=*&order=created_at.desc`),
-    api(`notes?guest_id=eq.${currentGuestId}&select=*,bookings(code)&order=created_at.desc`)
+    api(`notes?guest_id=eq.${currentGuestId}&select=*,bookings(code)&order=created_at.desc`),
+    api(`guest_contacts?guest_id=eq.${currentGuestId}&select=*&order=created_at.asc`)
   ]);
-  guestCache = {guest, bookings, notes};
-  let html = `
-    <button class="back-btn" onclick="loadHome()">&#8592; All guests</button>
-    <div class="card" style="margin-bottom:1.25rem">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px">
-        <div class="avatar" style="width:46px;height:46px;font-size:14px">${esc(initials(guest.name))}</div>
-        <div style="flex:1">
-          <div style="font-size:17px;font-weight:600;color:#1a1a1a">${esc(guest.name)}</div>
-          <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:6px">
-            ${guest.email?`<span class="id-chip">&#9993; ${esc(guest.email)}</span>`:''}
-            ${guest.phone?`<span class="id-chip">&#128222; ${esc(guest.phone)}</span>`:''}
-          </div>
-        </div>
-        <button class="btn-ghost" onclick="openModal('edit-guest')">&#9998; Edit</button>
+  guestCache={guest,bookings,notes,contacts};
+  const emails=contacts.filter(c=>c.type==='email');
+  const phones=contacts.filter(c=>c.type==='phone');
+
+  let html=`<button class="back-btn" onclick="loadHome()">&#8592; All guests</button>
+  <div class="card" style="margin-bottom:1.25rem">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem">
+      <div class="avatar" style="width:46px;height:46px;font-size:14px">${esc(initials(guest.name))}</div>
+      <div style="flex:1">
+        <div style="font-size:17px;font-weight:600">${esc(guest.name)}</div>
+        <div style="font-size:12px;color:#a3a39e;margin-top:2px">${emails.length} email${emails.length!==1?'s':''} &middot; ${phones.length} phone${phones.length!==1?'s':''}</div>
+      </div>
+      <button class="btn-ghost" onclick="openModal('edit-guest')">&#9998; Edit name</button>
+    </div>
+    <div class="contacts-grid">
+      <div class="contacts-section">
+        <div class="contacts-section-title">Emails <button class="btn-ghost" onclick="openModal('add-contact','email')" style="font-size:11px">+ Add</button></div>
+        ${emails.length?emails.map(c=>`<div class="contact-item">
+          <div class="contact-value">${esc(c.value)}</div>
+          <span class="contact-source">${esc(sourceLabel(c.source))}</span>
+          <button class="btn-danger" onclick="deleteContact('${c.id}')">&#10005;</button>
+        </div>`).join(''):'<div style="font-size:12px;color:#a3a39e">None on file</div>'}
+      </div>
+      <div class="contacts-section">
+        <div class="contacts-section-title">Phone numbers <button class="btn-ghost" onclick="openModal('add-contact','phone')" style="font-size:11px">+ Add</button></div>
+        ${phones.length?phones.map(c=>`<div class="contact-item">
+          <div class="contact-value">${esc(c.value)}</div>
+          <span class="contact-source">${esc(sourceLabel(c.source))}</span>
+          <button class="btn-danger" onclick="deleteContact('${c.id}')">&#10005;</button>
+        </div>`).join(''):'<div style="font-size:12px;color:#a3a39e">None on file</div>'}
       </div>
     </div>
-    <div class="tabs">
-      <button class="tab ${currentTab==='bookings'?'active':''}" onclick="switchTab('bookings')">Bookings (${bookings.length})</button>
-      <button class="tab ${currentTab==='notes'?'active':''}" onclick="switchTab('notes')">Notes (${notes.length})</button>
-    </div>`;
+  </div>
+  <div class="tabs">
+    <button class="tab ${currentTab==='bookings'?'active':''}" onclick="switchTab('bookings')">Bookings (${bookings.length})</button>
+    <button class="tab ${currentTab==='notes'?'active':''}" onclick="switchTab('notes')">Notes (${notes.length})</button>
+  </div>`;
 
-  if (currentTab === 'bookings') {
-    html += `<div>`;
-    if (!bookings.length) {
-      html += `<div class="empty">No bookings yet.</div>`;
-    } else {
-      bookings.forEach(b => {
-        html += `<div class="booking-row">
-          <div>
-            <div class="booking-code">${esc(b.code)}</div>
-            <div class="booking-vehicle">${esc(b.vehicle||'Vehicle not specified')}</div>
-          </div>
-          <div class="booking-date">${[b.start_date,b.end_date].filter(Boolean).join(' \u2192 ')}</div>
-          <button class="btn-danger" onclick="deleteBooking('${b.id}')">&#128465;</button>
-        </div>`;
-      });
-    }
-    html += `<button class="new-btn" style="margin-top:6px" onclick="openModal('booking')">+ Add booking</button></div>`;
+  if(currentTab==='bookings'){
+    html+=`<div>`;
+    if(!bookings.length){html+=`<div class="empty">No bookings yet.</div>`;}
+    else{bookings.forEach(b=>{html+=`<div class="booking-row">
+      <div><div class="booking-code">${esc(b.code)}</div><div class="booking-vehicle">${esc(b.vehicle||'Vehicle not specified')}</div></div>
+      <div class="booking-date">${[b.start_date,b.end_date].filter(Boolean).join(' \u2192 ')}</div>
+      <button class="btn-danger" onclick="deleteBooking('${b.id}')">&#128465;</button>
+    </div>`;});}
+    html+=`<button class="new-btn" style="margin-top:6px" onclick="openModal('booking')">+ Add booking</button></div>`;
   } else {
-    html += `
-      <div style="display:flex;justify-content:flex-end;margin-bottom:10px">
-        <button class="btn btn-primary" onclick="openModal('note')">+ Add note</button>
-      </div>
-      <div class="search-row" style="margin-bottom:12px">
-        <input type="text" id="lnsq" placeholder="Filter notes..." oninput="filterLocalNotes(this.value)" />
-      </div>
-      <div id="local-notes-list">${renderNotesList(notes)}</div>`;
+    html+=`<div style="display:flex;justify-content:flex-end;margin-bottom:10px"><button class="btn btn-primary" onclick="openModal('note')">+ Add note</button></div>
+    <div class="search-row" style="margin-bottom:12px"><input type="text" id="lnsq" placeholder="Filter notes..." oninput="filterLocalNotes(this.value)" /></div>
+    <div id="local-notes-list">${renderNotesList(notes)}</div>`;
   }
-
   setApp(html);
 }
 
-function renderNotesList(notes) {
-  if (!notes.length) return `<div class="empty">No notes yet.</div>`;
-  return notes.map(n=>`
-    <div class="note-card">
-      <div class="note-header">
-        <span class="ch-badge ${chClass(n.channel)}">${chLabel(n.channel)}</span>
-        ${n.bookings?`<span class="note-booking-ref">${esc(n.bookings.code)}</span>`:'<span class="note-booking-ref" style="opacity:0.5">No booking</span>'}
-        ${n.agent?`<span class="note-agent">${esc(n.agent)}</span>`:''}
-        <span class="note-time">${fmtTime(n.created_at)}</span>
-      </div>
-      <div class="note-body">${esc(n.text)}</div>
-      <div style="margin-top:7px">
-        <button class="btn-danger" onclick="deleteNote('${n.id}')">&#128465; Delete</button>
-      </div>
-    </div>`).join('');
+function renderNotesList(notes){
+  if(!notes.length)return`<div class="empty">No notes yet.</div>`;
+  return notes.map(n=>`<div class="note-card">
+    <div class="note-header">
+      <span class="ch-badge ${chClass(n.channel)}">${chLabel(n.channel)}</span>
+      ${n.bookings?`<span class="note-booking-ref">${esc(n.bookings.code)}</span>`:'<span class="note-booking-ref" style="opacity:0.5">No booking</span>'}
+      ${n.agent?`<span class="note-agent">${esc(n.agent)}</span>`:''}
+      <span class="note-time">${fmtTime(n.created_at)}</span>
+    </div>
+    <div class="note-body">${esc(n.text)}</div>
+    <div style="margin-top:7px"><button class="btn-danger" onclick="deleteNote('${n.id}')">&#128465; Delete</button></div>
+  </div>`).join('');
 }
 
-function filterLocalNotes(q) {
-  q = q.toLowerCase().trim();
-  const filtered = q ? guestCache.notes.filter(n=>(n.text||'').toLowerCase().includes(q)) : guestCache.notes;
-  document.getElementById('local-notes-list').innerHTML = renderNotesList(filtered);
+function filterLocalNotes(q){
+  q=q.toLowerCase().trim();
+  const filtered=q?guestCache.notes.filter(n=>(n.text||'').toLowerCase().includes(q)):guestCache.notes;
+  document.getElementById('local-notes-list').innerHTML=renderNotesList(filtered);
 }
 
-function switchTab(tab) {
-  currentTab = tab;
-  renderProfile();
-}
+function switchTab(tab){currentTab=tab;renderProfile();}
 
-function openModal(type) {
-  const root = document.getElementById('modal-root');
-  const g = guestCache.guest||{};
-  const bookings = guestCache.bookings||[];
+function openModal(type,extra){
+  const root=document.getElementById('modal-root');
+  const g=guestCache.guest||{};
+  const bookings=guestCache.bookings||[];
 
-  if (type==='guest') {
-    root.innerHTML = `<div class="modal-wrap" onclick="if(event.target===this)closeModal()"><div class="modal">
+  if(type==='guest'){
+    root.innerHTML=`<div class="modal-wrap" onclick="if(event.target===this)closeModal()"><div class="modal">
       <h3>New guest profile</h3>
       <div class="field"><label>Full name *</label><input type="text" id="m-name" placeholder="e.g. Anna Reyes" /></div>
-      <div class="field"><label>Email</label><input type="email" id="m-email" placeholder="e.g. anna@example.com" /></div>
-      <div class="field"><label>Phone</label><input type="tel" id="m-phone" placeholder="e.g. +1 512 555 0100" /></div>
-      <div class="modal-footer">
-        <button class="btn" onclick="closeModal()">Cancel</button>
-        <button class="btn btn-primary" onclick="createGuest()">Create profile</button>
-      </div>
+      <div class="field"><label>Primary email</label><input type="email" id="m-email" placeholder="e.g. anna@example.com" /></div>
+      <div class="field"><label>Primary phone</label><input type="tel" id="m-phone" placeholder="e.g. +1 512 555 0100" /></div>
+      <div class="modal-footer"><button class="btn" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="createGuest()">Create profile</button></div>
     </div></div>`;
-  } else if (type==='edit-guest') {
-    root.innerHTML = `<div class="modal-wrap" onclick="if(event.target===this)closeModal()"><div class="modal">
-      <h3>Edit guest profile</h3>
+  } else if(type==='edit-guest'){
+    root.innerHTML=`<div class="modal-wrap" onclick="if(event.target===this)closeModal()"><div class="modal">
+      <h3>Edit guest name</h3>
       <div class="field"><label>Full name *</label><input type="text" id="m-name" value="${esc(g.name)}" /></div>
-      <div class="field"><label>Email</label><input type="email" id="m-email" value="${esc(g.email||'')}" /></div>
-      <div class="field"><label>Phone</label><input type="tel" id="m-phone" value="${esc(g.phone||'')}" /></div>
-      <div class="modal-footer">
-        <button class="btn" onclick="closeModal()">Cancel</button>
-        <button class="btn btn-primary" onclick="saveEditGuest()">Save changes</button>
-      </div>
+      <div class="modal-footer"><button class="btn" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="saveEditGuest()">Save</button></div>
     </div></div>`;
-  } else if (type==='booking') {
-    root.innerHTML = `<div class="modal-wrap" onclick="if(event.target===this)closeModal()"><div class="modal">
-      <h3>Add booking</h3>
-      <div class="field"><label>Booking code *</label><input type="text" id="m-code" placeholder="e.g. ZV-2024-88123" /></div>
-      <div class="field"><label>Vehicle</label><input type="text" id="m-vehicle" placeholder="e.g. Tesla Model 3 — White" /></div>
-      <div class="field"><label>Start date</label><input type="text" id="m-start" placeholder="e.g. Jun 1, 2025" /></div>
-      <div class="field"><label>End date</label><input type="text" id="m-end" placeholder="e.g. Jun 5, 2025" /></div>
-      <div class="modal-footer">
-        <button class="btn" onclick="closeModal()">Cancel</button>
-        <button class="btn btn-primary" onclick="createBooking()">Add booking</button>
-      </div>
-    </div></div>`;
-  } else if (type==='note') {
-    root.innerHTML = `<div class="modal-wrap" onclick="if(event.target===this)closeModal()"><div class="modal">
-      <h3>Add note</h3>
-      <div class="field"><label>Booking (optional)</label>
-        <select id="m-booking">
-          <option value="">-- Not booking-specific --</option>
-          ${bookings.map(b=>`<option value="${b.id}">${esc(b.code)}${b.vehicle?' \u2014 '+esc(b.vehicle):''}</option>`).join('')}
-        </select>
-      </div>
-      <div class="field"><label>Channel</label>
-        <select id="m-channel">
+  } else if(type==='add-contact'){
+    const isEmail=extra==='email';
+    root.innerHTML=`<div class="modal-wrap" onclick="if(event.target===this)closeModal()"><div class="modal">
+      <h3>Add ${isEmail?'email address':'phone number'}</h3>
+      <div class="field"><label>${isEmail?'Email address':'Phone number'} *</label><input type="${isEmail?'email':'tel'}" id="m-value" placeholder="${isEmail?'e.g. anna@gmail.com':'e.g. +1 512 555 0199'}" /></div>
+      <div class="field"><label>Where did this come from?</label>
+        <select id="m-source">
+          <option value="zevo-account">ZEVO account</option>
           <option value="email">Email</option>
           <option value="sms">SMS</option>
           <option value="chat">Web chat</option>
-          <option value="app">App chat</option>
-          <option value="internal">Internal</option>
+          <option value="app">ZEVO app</option>
+          <option value="other">Other</option>
         </select>
+      </div>
+      <div class="modal-footer"><button class="btn" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="addContact('${extra}')">Add</button></div>
+    </div></div>`;
+  } else if(type==='booking'){
+    root.innerHTML=`<div class="modal-wrap" onclick="if(event.target===this)closeModal()"><div class="modal">
+      <h3>Add booking</h3>
+      <div class="field"><label>Booking code *</label><input type="text" id="m-code" placeholder="e.g. ZV-2024-88123" /></div>
+      <div class="field"><label>Vehicle</label><input type="text" id="m-vehicle" placeholder="e.g. Tesla Model 3 — White" /></div>
+      <div class="field-row">
+        <div class="field"><label>Start date</label><input type="text" id="m-start" placeholder="e.g. Jun 1, 2025" /></div>
+        <div class="field"><label>End date</label><input type="text" id="m-end" placeholder="e.g. Jun 5, 2025" /></div>
+      </div>
+      <div class="modal-footer"><button class="btn" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="createBooking()">Add booking</button></div>
+    </div></div>`;
+  } else if(type==='note'){
+    root.innerHTML=`<div class="modal-wrap" onclick="if(event.target===this)closeModal()"><div class="modal">
+      <h3>Add note</h3>
+      <div class="field"><label>Booking (optional)</label>
+        <select id="m-booking"><option value="">-- Not booking-specific --</option>${bookings.map(b=>`<option value="${b.id}">${esc(b.code)}${b.vehicle?' \u2014 '+esc(b.vehicle):''}</option>`).join('')}</select>
+      </div>
+      <div class="field"><label>Channel</label>
+        <select id="m-channel"><option value="email">Email</option><option value="sms">SMS</option><option value="chat">Web chat</option><option value="app">App chat</option><option value="internal">Internal</option></select>
       </div>
       <div class="field"><label>Your name</label><input type="text" id="m-agent" placeholder="e.g. Weng" /></div>
       <div class="field"><label>Note *</label><textarea id="m-note" placeholder="Write your note here..."></textarea></div>
-      <div class="modal-footer">
-        <button class="btn" onclick="closeModal()">Cancel</button>
-        <button class="btn btn-primary" onclick="createNote()">Post note</button>
-      </div>
+      <div class="modal-footer"><button class="btn" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="createNote()">Post note</button></div>
     </div></div>`;
   }
 }
 
-function closeModal() { document.getElementById('modal-root').innerHTML=''; }
+function closeModal(){document.getElementById('modal-root').innerHTML='';}
 
-async function createGuest() {
-  const name = (document.getElementById('m-name').value||'').trim();
-  if (!name) return;
-  const data = await api('guests', 'POST', {name, email:(document.getElementById('m-email').value||'').trim()||null, phone:(document.getElementById('m-phone').value||'').trim()||null});
-  closeModal();
-  toast('Guest profile created');
-  openGuest(data[0].id);
+async function createGuest(){
+  const name=(document.getElementById('m-name').value||'').trim();
+  if(!name)return;
+  const email=(document.getElementById('m-email').value||'').trim();
+  const phone=(document.getElementById('m-phone').value||'').trim();
+  const data=await api('guests','POST',{name,primary_email:email||null,primary_phone:phone||null});
+  const gid=data[0].id;
+  const promises=[];
+  if(email)promises.push(api('guest_contacts','POST',{guest_id:gid,type:'email',value:email,source:'zevo-account'}));
+  if(phone)promises.push(api('guest_contacts','POST',{guest_id:gid,type:'phone',value:phone,source:'zevo-account'}));
+  await Promise.all(promises);
+  closeModal();toast('Guest profile created');openGuest(gid);
 }
 
-async function saveEditGuest() {
-  const name = (document.getElementById('m-name').value||'').trim();
-  if (!name) return;
-  await api(`guests?id=eq.${currentGuestId}`, 'PATCH', {name, email:(document.getElementById('m-email').value||'').trim()||null, phone:(document.getElementById('m-phone').value||'').trim()||null});
-  closeModal();
-  toast('Profile updated');
-  renderProfile();
+async function saveEditGuest(){
+  const name=(document.getElementById('m-name').value||'').trim();
+  if(!name)return;
+  await api(`guests?id=eq.${currentGuestId}`,'PATCH',{name});
+  closeModal();toast('Name updated');renderProfile();
 }
 
-async function createBooking() {
-  const code = (document.getElementById('m-code').value||'').trim();
-  if (!code) return;
-  await api('bookings', 'POST', {guest_id:currentGuestId, code, vehicle:(document.getElementById('m-vehicle').value||'').trim()||null, start_date:(document.getElementById('m-start').value||'').trim()||null, end_date:(document.getElementById('m-end').value||'').trim()||null});
-  closeModal();
-  toast('Booking added');
-  renderProfile();
+async function addContact(type){
+  const value=(document.getElementById('m-value').value||'').trim();
+  if(!value)return;
+  const source=document.getElementById('m-source').value;
+  await api('guest_contacts','POST',{guest_id:currentGuestId,type,value,source});
+  const g=guestCache.guest;
+  if(type==='email'&&!g.primary_email)await api(`guests?id=eq.${currentGuestId}`,'PATCH',{primary_email:value});
+  if(type==='phone'&&!g.primary_phone)await api(`guests?id=eq.${currentGuestId}`,'PATCH',{primary_phone:value});
+  closeModal();toast('Contact added');renderProfile();
 }
 
-async function createNote() {
-  const text = (document.getElementById('m-note').value||'').trim();
-  if (!text) return;
-  const bid = document.getElementById('m-booking').value||null;
-  await api('notes', 'POST', {guest_id:currentGuestId, booking_id:bid||null, text, channel:document.getElementById('m-channel').value, agent:(document.getElementById('m-agent').value||'').trim()||null});
-  closeModal();
-  toast('Note posted');
-  currentTab='notes';
-  renderProfile();
+async function deleteContact(id){
+  if(!confirm('Remove this contact detail?'))return;
+  await api(`guest_contacts?id=eq.${id}`,'DELETE');
+  toast('Contact removed');renderProfile();
 }
 
-async function deleteBooking(id) {
-  if (!confirm('Delete this booking?')) return;
-  await api(`bookings?id=eq.${id}`, 'DELETE');
-  toast('Booking deleted');
-  renderProfile();
+async function createBooking(){
+  const code=(document.getElementById('m-code').value||'').trim();
+  if(!code)return;
+  await api('bookings','POST',{guest_id:currentGuestId,code,vehicle:(document.getElementById('m-vehicle').value||'').trim()||null,start_date:(document.getElementById('m-start').value||'').trim()||null,end_date:(document.getElementById('m-end').value||'').trim()||null});
+  closeModal();toast('Booking added');renderProfile();
 }
 
-async function deleteNote(id) {
-  if (!confirm('Delete this note?')) return;
-  await api(`notes?id=eq.${id}`, 'DELETE');
-  toast('Note deleted');
-  renderProfile();
+async function createNote(){
+  const text=(document.getElementById('m-note').value||'').trim();
+  if(!text)return;
+  await api('notes','POST',{guest_id:currentGuestId,booking_id:document.getElementById('m-booking').value||null,text,channel:document.getElementById('m-channel').value,agent:(document.getElementById('m-agent').value||'').trim()||null});
+  closeModal();toast('Note posted');currentTab='notes';renderProfile();
 }
 
-if (sessionStorage.getItem('zevo_auth') === '1') {
-  loadHome();
+async function deleteBooking(id){
+  if(!confirm('Delete this booking?'))return;
+  await api(`bookings?id=eq.${id}`,'DELETE');
+  toast('Booking deleted');renderProfile();
 }
+
+async function deleteNote(id){
+  if(!confirm('Delete this note?'))return;
+  await api(`notes?id=eq.${id}`,'DELETE');
+  toast('Note deleted');renderProfile();
+}
+
+if(sessionStorage.getItem('zevo_auth')==='1'){loadHome();}
 </script>
 </body>
 </html>
